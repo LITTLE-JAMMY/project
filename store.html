@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jammie Restaurant | Store</title>
+    <link rel="icon" href="image/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bbdccb4e58.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="food.css">
+</head>
+<style>
+    .background-image {
+    background-image: url("image/chicken45.jpg");
+    min-height: 457px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#jam {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black;
+}
+#image99 {
+    border: 5px solid white;
+}
+</style>
+<body>
+    <!--navigation-->
+    <nav class="navbar navbar-expand-sm" id="nam">
+        <div class="container">
+            <a href="#" class="navbar-brand" id="rest">
+                <img src="image/logo.png" > Jammie Restaurant
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav" style="justify-content: flex-end;">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                   <a href="home.html" class="nav-link" id="home"><i class="fas fa-home"></i> Home</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="aboutfood.html" class="nav-link" id="about"><i class="fas fa-eject"></i> About</a> 
+                 </li>
+                <li class="nav-item active">
+                    <a href="#foodstore" class="nav-link" id="contact"><i class="fas fa-store"></i> Stores</a> 
+                 </li>
+                 <li class="nav-item">
+                     <a href="#" class="nav-link">
+                        <i class="fas fa-shopping-cart" id="shop" style="font-size: 25px"></i>
+                        <span class="badge bg-warning rounded-pill" style="font-size: 14px;">0</span>
+                     </a>
+                 </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!--banner-->
+    <div class="container-fluid">
+        <div class="row background-image" style="align-items: center;">
+            <div class="banner text-center">
+                <h2 id="jam">Welcome to Jammie's</h2>
+                <a href="#more" class="btn btn-outline-primary" id="explore">Explore More</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="more" style="background-color: #C0D5FE; padding: 50px 0px 50px 0px;">
+        <div class="container">
+            <div class="row" style="align-items: center;">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <img id="image99" class="img-fluid" src="image/gift.jpg">
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <h2 style="padding: 30px 0px 0px 0px;">Service for our Customers</h2>
+                    <br><br>
+                    <h5>If you buy food from our restaurants, you will get a gift from us. It can be drink, 
+                        dessert or something else but only if you come and buy at the restaurant. You can
+                        drink a hot tea for free at our restaurant and there will be teapot at each table.
+                        You can get variety kinds of sauce, too. There will be sauce at each food apart from
+                        drinks, dessets and curries. For Example, tomato and chili sauce for fried chicken
+                        and thai spicy green sauce for steak or something.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--foodstore-->
+<div class="container" id="foodstore">
+    <div class="row">
+        <div class="col-12 col-md-12 col-log-12">
+            <h3 class="text-center" style="padding: 50px 0px 20px 0px;">Our Food Store</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-12 text-center mb-3">
+            <a href="#" class="btn btn-outline-secondary type" data-filter="all">All</a>
+            <a href="#" class="btn btn-outline-secondary type" data-filter="curry">Curries</a>
+            <a href="#" class="btn btn-outline-secondary type" data-filter="drinks">Drinks</a>
+            <a href="#" class="btn btn-outline-secondary type" data-filter="desserts">Desserts</a>
+            <a href="#" class="btn btn-outline-secondary type" data-filter="fast">Fast Food</a>
+            <a href="#" class="btn btn-outline-secondary type" data-filter="others">Others</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-8 col-lg-6 mx-auto mb-3">
+            <div class="input-group">
+                <span type="button" class="input-group-text"><i class="fas fa-search"></i></span>
+                <input type="search" class="form-control" placeholder="search here..." id="search-box">
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item curry " data-item="curry">
+            <div class="card">
+                <img src="image/chicken.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">spicy chicken curry</h4>
+                    <p class="card-text">4000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item curry" data-item="curry">
+            <div class="card">
+                <img src="image/dry-pork.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">fried pork curry with rice</h4>
+                    <p class="card-text">4000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item curry" data-item="curry">
+            <div class="card">
+                <img src="image/beef.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">spicy beef curry</h4>
+                    <p class="card-text">4000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item curry" data-item="curry">
+            <div class="card">
+                <img src="image/mutton2.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">mutton curry</h4>
+                    <p class="card-text">4000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item curry" data-item="curry">
+            <div class="card">
+                <img src="image/crab3.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">spicy crab curry</h4>
+                    <p class="card-text">4000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item curry" data-item="curry">
+            <div class="card">
+                <img src="image/egg2.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">egg curry</h4>
+                    <p class="card-text">2000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item curry" data-item="curry">
+            <div class="card">
+                <img src="image/salmon-curry-recipe.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">salmon curry</h4>
+                    <p class="card-text">4000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item curry" data-item="curry">
+            <div class="card">
+                <img src="image/red-curry-tuna.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">tuna curry</h4>
+                    <p class="card-text">4000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item curry" data-item="curry">
+            <div class="card">
+                <img src="image/Pepe_Chingri_Recipe_Green_Papaya_Prawn_Curry_-1.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">prawn curry</h4>
+                    <p class="card-text">5000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item curry" data-item="curry">
+            <div class="card">
+                <img src="image/potato.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">potato curry</h4>
+                    <p class="card-text">2000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item curry" data-item="curry">
+            <div class="card">
+                <img src="image/cod-tomato.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">poached cod tomato curry</h4>
+                    <p class="card-text">2000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item curry" data-item="curry">
+            <div class="card">
+                <img src="image/images.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">vegetable curry</h4>
+                    <p class="card-text">3000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item others" data-item="others">
+            <div class="card">
+                <img src="image/chinese-fried-noodles-basic-recipe-2.jpg "  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">fried noodle/vermicelli</h4>
+                    <p class="card-text">2500 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item fast" data-item="fast">
+            <div class="card">
+                <img src="image/watermark.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">fresh fries</h4>
+                    <p class="card-text">1500 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item fast" data-item="fast">
+            <div class="card">
+                <img src="image/Smashburger-recipe-120219.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">burger</h4>
+                    <p class="card-text">2500 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item fast" data-item="fast">
+            <div class="card">
+                <img src="image/chick.jpeg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">fried chicken</h4>
+                    <p class="card-text">1 plate 7500 ks/1 chicken 1500 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item fast" data-item="fast">
+            <div class="card">
+                <img src="image/pizza.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">pizza</h4>
+                    <p class="card-text">1 slice 2500/1 plate 15000</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item fast" data-item="fast">
+            <div class="card">
+                <img src="image/taco.webp"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">taco</h4>
+                    <p class="card-text">1 taco 1500 ks/1 plate 4500 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item others" data-item="others">
+            <div class="card">
+                <img src="image/how-to-cook-steak-1061w.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">steak</h4>
+                    <p class="card-text">4500 ks(Rare, Medium Rare, Medium Well, Well Done are available )</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item others" data-item="others">
+            <div class="card">
+                <img src="image/vegetable-soup.jpg" height="254">
+                <div class="card-body">
+                    <h4 class="card-title">vegetable soup</h4>
+                    <p class="card-text">2500 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item others" data-item="others">
+            <div class="card">
+                <img src="image/tom-yum-soup-best-3217653-Hero_01-1bf2ac7948fc407c97db9ee2d1aa2b9b.jpg" height="254">
+                <div class="card-body">
+                    <h4 class="card-title">tom yum soup</h4>
+                    <p class="card-text">4000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item others" data-item="others">
+            <div class="card">
+                <img src="image/mohinga-edit-scaled.jpg" height="254">
+                <div class="card-body">
+                    <h4 class="card-title">mohinga</h4>
+                    <p class="card-text">1000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item others" data-item="others">
+            <div class="card">
+                <img src="image/Coconut-Noodles-articleLarge.jpg" height="254">
+                <div class="card-body">
+                    <h4 class="card-title">coconut noodle</h4>
+                    <p class="card-text">1000 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item others" data-item="others">
+            <div class="card">
+                <img src="image/shan-noodles-chopsticks-white-marble-tabletop-burmese-cuisine-traditional-dish-myanmar-food-shan-noodles-chopsticks-147272015.jpg" height="254">
+                <div class="card-body">
+                    <h4 class="card-title">shan noodle</h4>
+                    <p class="card-text">1500 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item drinks" data-item="drinks">
+            <div class="card">
+                <img src="image/soda.jpg" height="254">
+                <div class="card-body">
+                    <h4 class="card-title">soda drinks</h4>
+                    <p class="card-text">500 ks each</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item drinks" data-item="drinks">
+            <div class="card">
+                <img src="image/FruitJuice.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">fruit juices</h4>
+                    <p class="card-text">1500 ks each</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item drinks" data-item="drinks">
+            <div class="card">
+                <img src="image/types-of-coffee-finding-your-flavor.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">coffee</h4>
+                    <p class="card-text">800 ks(payment is base on type of coffee what you drink)</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item drinks" data-item="drinks">
+            <div class="card">
+                <img src="image/flatten.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">tea</h4>
+                    <p class="card-text">800 ks(payment is base on type of tea what you drink)</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item drinks" data-item="drinks">
+            <div class="card">
+                <img src="image/beer3.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">beer</h4>
+                    <p class="card-text">1500 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item drinks" data-item="drinks">
+            <div class="card">
+                <img src="image/melon-soda-float.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">melon Soda Float</h4>
+                    <p class="card-text">1500 ks</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item desserts" data-item="desserts">
+            <div class="card">
+                <img src="image/ice-cream.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">ice-creams</h4>
+                    <p class="card-text">1000 ks each</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item desserts" data-item="desserts" >
+            <div class="card">
+                <img src="image/AngelCake2.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">angel cake</h4>
+                    <p class="card-text">1500 ks </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item desserts" data-item="desserts">
+            <div class="card">
+                <img src="image/georgetown-cupcakes-fb.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">cupcakes</h4>
+                    <p class="card-text">1200 ks each</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item desserts" data-item="desserts">
+            <div class="card">
+                <img src="image/joycone_milkshakes3.jpeg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">milkshakes</h4>
+                    <p class="card-text">2000 ks each</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item desserts" data-item="desserts">
+            <div class="card">
+                <img src="image/hzwzxzxhaqdbq9svkquq.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">falooda</h4>
+                    <p class="card-text">2000 ks each</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-3 item desserts" data-item="desserts">
+            <div class="card">
+                <img src="image/cake.jpg"  height="254">
+                <div class="card-body">
+                    <h4 class="card-title">brownie cake</h4>
+                    <p class="card-text">2500 ks </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--footer-->
+<footer class="footer"  style="padding: 40px; margin-top: 10px;">
+<div class="container">
+    <div class="row ">
+        <div class="col-12 col-md-4 col-lg-4" >
+            <h4>About Us</h4>
+            <br>
+            
+            <a href="footer/term.html">Terms & Conditions</a>
+            <br>
+            <br>
+            <a href="footer/privacy.html">Privacy Policy</a>
+            <br>
+            <br>
+            <a href="aboutfood.html">About the Restaurant</a>
+            <br><br>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+            <h4>Customer Care</h4>
+            
+            <br>
+            <a href="footer/helpcenter.html">Help Center</a>
+            <br>
+            <br>
+            <a href="footer/return and refunds.html">Return and Refunds</a>
+            <br>
+            <br>
+            <a href="footer/contact.html">Contact Us</a>
+            <br>
+            <br>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+            <h4>Keep in Touch</h4>
+            
+            <br>
+            <a href="footer/facebook.html" id="icon">Facebook</a>
+            <a href="footer/instagram.html" id="icon">Instagram</a>
+            <a href="footer/telegram.html" id="icon">Telegram</a>
+            <a href="footer/twitter.html" id="icon">Twitter</a>
+            <br>
+            <br>
+            <a href="mailto:jammie@restaurant.com.mm">Email : jammie@restaurant.com.mm</a>
+            <br>
+            <br>
+            <a href="tel:0921211712">Hotline No : 0921211712</a>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+<br>
+
+<div class="col-12 col-md-12 col-lg-12 text-center">
+    <h5 id="copyRight">© Copyright 2021 by Jammie Restaurant Myanmar</h5>
+</div>
+</footer>
+</body>
+<script src="food.js"></script>
+</html>
